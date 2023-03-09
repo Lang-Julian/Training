@@ -1,12 +1,11 @@
-package Aufgabe5;
+package Aufgabe4;
 
 import java.util.Scanner;
 
 public class BodyMassIndexCalculator {
 
     public static double calculateBMI(double weight, double height) {
-        double bmi = weight / (height * height);
-        return bmi;
+        return weight / (height * height);
     }
 
     public static BmiCategory classify(double bmi) {
@@ -19,21 +18,27 @@ public class BodyMassIndexCalculator {
         } else {
             return BmiCategory.OBESE;
         }
+
     }
 
     public enum BmiCategory {
         UNDERWEIGHT,
         NORMAL,
         OVERWEIGHT,
-        OBESE
+        OBESE;
+
+        @Override
+        public String toString() {
+            return name().toLowerCase();
+        }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input weight in kilograms: ");
         double weight = sc.nextDouble();
-        System.out.print("Input height in meters: ");
-        double height = sc.nextDouble();
+        System.out.print("Input height in centimeters: ");
+        double height = sc.nextDouble() / 100;
         double bmi = calculateBMI(weight, height);
         BmiCategory bmiCategory = classify(bmi);
         System.out.println("The Body Mass Index is " + bmi + ", which is considered " + bmiCategory + ".");
