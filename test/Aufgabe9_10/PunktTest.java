@@ -1,11 +1,12 @@
-package Aufgabe8;
+package Aufgabe9_10;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-
-
+// Definition of a JUnit test class for the Punkt class
 class PunktTest {
+
+    // Test method for the addiere method of the Punkt class
     @Test
     public void testAddiere() {
         Punkt p1 = new Punkt(1, 2);
@@ -14,6 +15,7 @@ class PunktTest {
         assertEquals("(4.0, 6.0)", p1.toString());
     }
 
+    // Test method for the subtrahiere method of the Punkt class
     @Test
     public void testSubtrahiere() {
         Punkt p1 = new Punkt(5, 6);
@@ -22,6 +24,7 @@ class PunktTest {
         assertEquals("(2.0, 2.0)", p1.toString());
     }
 
+    // Test method for the multipliziere method of the Punkt class
     @Test
     public void testMultipliziere() {
         Punkt p1 = new Punkt(2, 3);
@@ -29,6 +32,7 @@ class PunktTest {
         assertEquals("(8.0, 12.0)", p1.toString());
     }
 
+    // Test method for the dividiere method of the Punkt class
     @Test
     public void testDividiere() {
         Punkt p1 = new Punkt(10, 12);
@@ -36,6 +40,7 @@ class PunktTest {
         assertEquals("(5.0, 6.0)", p1.toString());
     }
 
+    // Test method to check that the addiere method does not change the second point object
     @Test
     public void testObjektAenderung() {
         Punkt p1 = new Punkt(1, 2);
