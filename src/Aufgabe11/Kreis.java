@@ -6,7 +6,7 @@ package Aufgabe11;
 //oder
 //U = 2 * π * r
 //wobei π (Pi) eine mathematische Konstante ist, die ungefähr 3.14159 beträgt und r der Radius des Kreises ist.
-public class Kreis implements GeometrischesObjekt {
+public class Kreis extends GeometrischesObjekt {
 
     private double radius;
 

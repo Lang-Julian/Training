@@ -1,9 +1,6 @@
 package Aufgabe11;
 
-public interface GeometrischesObjekt {
-
-    double berechneFlaecheninhalt();
-
-    double berechneUmfang();
-
+public abstract class GeometrischesObjekt {
+    public abstract double berechneFlaecheninhalt();
+    public abstract double berechneUmfang();
 }

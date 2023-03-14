@@ -3,7 +3,7 @@ package Aufgabe11;
 //Flächeninhalt = Länge * Breite
 //oder
 //A = l * b
-public class Rechteck implements GeometrischesObjekt {
+public class Rechteck extends GeometrischesObjekt {
 
     private double laenge;
     private double breite;

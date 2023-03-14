@@ -1,6 +1,6 @@
 package Aufgabe11;
 
-public class Dreieck implements GeometrischesObjekt {
+public class Dreieck extends GeometrischesObjekt {
     private double seite1;
     private double seite2;
     private double seite3;
